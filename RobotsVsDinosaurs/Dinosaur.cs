@@ -25,9 +25,9 @@ namespace RobotsVsDinosaurs
 
 
         //member methods
-        public void Attack()
-        { 
-
+        public void Attack(Robot robot)
+        {
+            robot.health -= attackPower;
         }
 
         public void TakeDameage()
