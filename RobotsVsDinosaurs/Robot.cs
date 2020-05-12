@@ -23,15 +23,14 @@ namespace RobotsVsDinosaurs
             powerLevel = 10;
             weapon = new Weapon(weaponChoice);
 
-
         }
 
 
 
         //member methods
-        public void Attack(Dinosaur dinosaur)
+        public void Attack(Dinosaur dinosaurAttacked)
         {
-            dinosaur.health -= attackPower;
+            dinosaurAttacked.health -= weapon.attackPower;
         }
 
         public void TakeDamage(Robot robot)

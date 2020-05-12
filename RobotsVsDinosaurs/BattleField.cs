@@ -8,6 +8,20 @@ namespace RobotsVsDinosaurs
 {
     class BattleField
     {
+        //member variables
+        public Fleet fleet;
+        public Herd herd;
 
+
+
+        //constructor
+        public BattleField()
+        {
+            herd = new Herd();
+            fleet = new Fleet();
+        }
+
+
+        //member methods
     }
 }
