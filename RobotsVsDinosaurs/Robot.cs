@@ -13,29 +13,30 @@ namespace RobotsVsDinosaurs
         public double health;
         public double powerLevel;
         public double attackPower;
+        public Weapon weapon;
 
         //Constructor
         public Robot(string name, double health, double powerLevel, double attackPower)
         {
             this.name = name;
-            this.health = health;
-            this.powerLevel = powerLevel;
-            this.attackPower = attackPower;
+            health = 100;
+            powerLevel = 10;
+            weapon = new Weapon();
+
 
         }
-
-
 
 
 
         //member methods
-        public void Attack()
+        public void Attack(Dinosaur dinosaur)
         {
-
+            dinosaur.health -= attackPower;
         }
 
-        public void TakeDamage()
+        public void TakeDamage(Robot robot)
         {
+            robot.health -= attackPower;
 
         }
     }
