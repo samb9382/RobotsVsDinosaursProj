@@ -8,11 +8,24 @@ namespace RobotsVsDinosaurs
 {
     class Fleet
     {
-        //instantiation
-        Robot robotOne = new Robot("Optimus", 100, 50, 55);
+        //member variables
+        public List<Robot> robotFleet;
 
-        Robot robotTwo = new Robot("Walle", 100, 15, 30);
+        //constructor
+        public Fleet()
+        {
+            robotFleet = new List<Robot>();
 
-        Robot robotThree = new Robot("Rob", 100, 60, 80);
+            Robot robotOne = new Robot("Optimus", "gun");
+
+            Robot robotTwo = new Robot("Wall-e", "RPG");
+
+            Robot robotThree = new Robot("Rob", "Brass Knuckles");
+
+            robotFleet.Add(robotOne);
+            robotFleet.Add(robotTwo);
+            robotFleet.Add(robotThree);
+        }
+  
     }
 }

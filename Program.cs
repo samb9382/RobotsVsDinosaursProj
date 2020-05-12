@@ -10,7 +10,7 @@ namespace RobotsVsDinosaurs
     {
         static void Main(string[] args)
         {
-
+            Robot robot = new Robot("sam", "gun");
         }
     }
 }

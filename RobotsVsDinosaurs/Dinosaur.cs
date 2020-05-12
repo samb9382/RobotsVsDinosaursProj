@@ -14,12 +14,12 @@ namespace RobotsVsDinosaurs
         public double attackPower;
 
         //constructor
-        public Dinosaur(string type, double health, double energy, double attackPower)
+        public Dinosaur(string type)
         {
             this.type = type;
-            this.health = health;
-            this.energy = energy;
-            this.attackPower = attackPower;
+            health = 100;
+            energy = 20;
+            attackPower = 15;
         }
 
 
