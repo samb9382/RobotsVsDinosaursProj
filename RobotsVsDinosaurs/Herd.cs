@@ -27,8 +27,8 @@ namespace RobotsVsDinosaurs
             dinosaurHerd.Add(dinosaurThree);
         }
     }
-    }
+}
 
         
-    }
-}
+    
+

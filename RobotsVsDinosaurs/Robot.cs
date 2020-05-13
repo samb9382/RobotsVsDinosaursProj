@@ -33,10 +33,6 @@ namespace RobotsVsDinosaurs
             dinosaurAttacked.health -= weapon.attackPower;
         }
 
-        public void TakeDamage(Robot robot)
-        {
-            robot.health -= attackPower;
-
-        }
+        
     }
 }
